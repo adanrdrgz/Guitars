@@ -8,14 +8,14 @@ const Header = ({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
             <div className="row justify-content-center justify-content-md-between">
                 <div className="col-8 col-md-3">
                     <a href="index.html">
-                        <img className="img-fluid" src="./public/img/logo.svg" alt="imagen logo" />
+                        <img className="img-fluid" src="./img/logo.svg" alt="imagen logo" />
                     </a>
                 </div>
                 <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
                     <div 
                         className="carrito"
                     >
-                        <img className="img-fluid" src="./public/img/carrito.png" alt="imagen carrito" />
+                        <img className="img-fluid" src="./img/carrito.png" alt="imagen carrito" />
 
                         <div id="carrito" className="bg-white p-3">
                           {isEmpty && <p className="text-center">El carrito esta vacio</p>}  
@@ -33,7 +33,7 @@ const Header = ({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                     {cart.map(guitar => (
                                         <tr key={guitar.id}>
                                         <td>
-                                            <img className="img-fluid" src={`./public/img/${guitar.image}.jpg`} alt="imagen guitarra" />
+                                            <img className="img-fluid" src={`./img/${guitar.image}.jpg`} alt="imagen guitarra" />
                                         </td>
                                         <td>{guitar.name}</td>
                                         <td className="fw-bold">
